@@ -1,0 +1,6 @@
+<span *ngIf="isDisabled">Current timezone: </span>
+<span>{{currentTimezone}}</span>
+<br>
+<span>{{currentDatetime}}</span>
+<br>
+<button (click)="updateTime()">Refresh</button> <button [disabled]="isDisabled" (click)="setSettingsDisabled()">Set current</button>

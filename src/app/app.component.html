@@ -1,0 +1,4 @@
+<h1>Timezones</h1>
+<app-timezone #first [currentTimezone]="timezone1" [isCurrentTimezone]="isTimezone1Current" (activityChange)="setSecondTimezoneSettingsEnabled($event)"></app-timezone>
+<br>
+<app-timezone #second [currentTimezone]="timezone2" [isCurrentTimezone]="isTimezone2Current" (activityChange)="setFirstTimezoneSettingsEnabled($event)"></app-timezone>
